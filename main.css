@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.movies__form {
+  margin-top: 60px;
+}
+
+input {
+  margin-right: 15px;
+  padding: 8px 7px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+}
+
+button {
+  padding: 7px 10px;
+  background-color: aqua;
+  border: transparent;
+}
+
+.movies__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.movies__item {
+  width: 380px;
+  height: 890px;
+  min-height: 550px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  padding: 15px 15px 35px 15px;
+  /* background-color: aqua; */
+  background: rgb(94,204,192);
+  background: linear-gradient(90deg, rgba(94,204,192,1) 27%, rgba(233,134,134,1) 80%, rgba(226,215,184,1) 100%);
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+.movies__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.movies__img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 180px;
+  background: #cdcdcd;
+  border-radius: 6px;
+  display: block;
+}
+
+.movies__heading {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.movies__rating {
+  display: block;
+  margin-bottom: 20px;
+}
+.movies__link {
+  text-decoration: none;
+}
+.movies__link:hover {
+  transition: 0.5s;
+  color:crimson;
+  
+}
+.movies__fulltitle {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.movies__language {
+  display: block;
+  margin-bottom: 0px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 6px;
+  border: 1px solid crimson;
+  width: fit-content;
+  padding: 7px 1px;
+}
+.movies__year {
+  margin-top: 10px;
+}
+.movies__categories {
+  margin: 0;
+  font-size: 15px;
+}
+.movies__rating {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 6px;
+  border: 1px solid crimson;
+  width: fit-content;
+  padding: 7px 1px;
+}
